@@ -30,7 +30,7 @@ This extension requires a **free Stack Exchange API key** to function. Don't wor
 
 2. Fill out the registration form:
    - **Application Name**: `My VS Code Searcher` (or any name you prefer)
-   - **Application Website**: `http://localhost`
+   - **Application Website**: `http://localhost` or leave it blank
    - **Application Description**: `A private tool for searching Stack Overflow from VS Code`
    - Leave other fields blank
    - Check the box to agree to the terms
