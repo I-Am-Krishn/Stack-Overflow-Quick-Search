@@ -4,6 +4,7 @@
   "description": "Right-click any selected text to search Stack Overflow. Bring your own API key.",
   "version": "1.0.0",
   "publisher": "I-Am-Krishn",
+  "icon": "logo.png",
   "engines": {
     "vscode": "^1.60.0"
   },
