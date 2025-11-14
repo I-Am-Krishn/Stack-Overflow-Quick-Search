@@ -1,0 +1,48 @@
+{
+  "name": "stack-overflow-quick-search",
+  "displayName": "Stack Overflow Quick Search",
+  "description": "Right-click any selected text to search Stack Overflow. Bring your own API key.",
+  "version": "1.0.0",
+  "publisher": "I-Am-Krishn",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:stackOverflowSearch.search"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "stackOverflowSearch.search",
+        "title": "Search Stack Overflow"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorHasSelection",
+          "command": "stackOverflowSearch.search",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "Stack Overflow Search",
+      "properties": {
+        "stackOverflowSearch.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Your personal Stack Exchange API key. (Go to stackapps.com to get a free key)"
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
