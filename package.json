@@ -5,6 +5,11 @@
   "version": "1.0.0",
   "publisher": "I-Am-Krishn",
   "icon": "logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/I-Am-Krishn/Stack-Overflow-Quick-Search"
+  },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.60.0"
   },
